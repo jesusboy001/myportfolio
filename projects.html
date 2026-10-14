@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | MyPortfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">MyPortfolio</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>My Projects</h1>
+    <div class="grid">
+      <article class="card project">
+        <img src="assets/planner.png" alt="Screenshot of an academic planner">
+        <h2>Academic Planner</h2>
+        <p>A responsive academic planner supporting course scheduling, built with plain JavaScript and CSS.</p>
+        <a href="planner.html" target="_blank" rel="noopener">Live Demo →</a>
+      </article>
+
+      <article class="card project">
+        <img src="assets/weather-app.png" alt="Screenshot of a weather dashboard">
+        <h2>Weather App</h2>
+        <p>Displays current weather for any city by fetching data from a public weather API.</p>
+        <a href="https://github.com/breezy-weather/breezy-weather" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="card project">
+        <img src="assets/tripstech.png" alt="Screenshot of a business landing page">
+        <h2>Business Landing Page</h2>
+        <p>A mobile-first landing page for a small business using Flexbox, animations and semantic HTML.</p>
+        <a href="https://tripstech.com.ng/" target="_blank" rel="noopener">Live demo →</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Divine-Favour Egeh.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

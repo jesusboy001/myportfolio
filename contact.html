@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | MyPortfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">MyPortfolio</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h1>Contact Me</h1>
+    <form id="contact-form" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <span class="error"></span>
+      </div>
+      <div class="field">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
+        <span class="error"></span>
+      </div>
+      <div class="field">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" inputmode="numeric">
+        <span class="error"></span>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <span class="error"></span>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="form-success" class="success" role="status"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Divine-Favour Egeh.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

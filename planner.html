@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | MyPortfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">MyPortfolio</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="nav-menu" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" aria-current="page">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h1>Academic Planner</h1>
+
+    <form id="task-form" class="planner-form" novalidate>
+      <label for="task-input" class="sr-only">New task</label>
+      <input type="text" id="task-input" placeholder="e.g. Finish COS 106 term project" maxlength="100">
+      <button type="submit" class="btn">Add Task</button>
+    </form>
+    <p id="task-error" class="error" role="alert"></p>
+
+    <p id="task-count" class="muted"></p>
+    <ul id="task-list" class="task-list"></ul>
+    <button id="clear-completed" class="btn btn-outline">Clear Completed</button>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Divine-Favour Egeh.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
